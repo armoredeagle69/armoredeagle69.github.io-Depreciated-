@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="0; url=https://armoredeagle69.github.io/website/index.html">
+<meta http-equiv="refresh" content="0; url=https://armoredeagle69.github.io/index.html">
