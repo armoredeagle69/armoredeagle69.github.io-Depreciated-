@@ -13,11 +13,92 @@
     <link rel="shortcut icon" href="./img/FlockBot - Main.png" type="image/x-icon">
     <title>FlockBot</title>
     <style>
-        .alert {
-            padding: 20px;
-            background-color: #f44336;
+        .alert-banner .tag {
+            -ms-flex-item-align: start;
+            align-self: flex-start;
+            margin-top: -4px;
+        }
+
+        .alert-banner .tag {
+            background-color: #CDDB00;
+            padding: 0px 5px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: .9375rem;
+            color: #000000;
+            letter-spacing: 1.76px;
+            line-height: 1.5625rem;
+            border-radius: 3px;
+            margin-right: 13px;
+            -webkit-transform: translateY(3px);
+            -o-transform: translateY(3px);
+            transform: translateY(3px);
+        }
+
+        .alert-banner .alert-row {
+            padding: 19px 35px 5px 23px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .alert-banner {
+            z-index: -5;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            -webkit-transform: translate3d(0px, calc(100% + -60rem), 0px);
+            transform: translate3d(0px, calc(100% + -60rem), 0px);
+            -webkit-transition: all 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+            -o-transition: all 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: 1200px;
+            width: 95%;
+            min-height: 67px;
+            border-top-left-radius: 11px;
+            border-top-right-radius: 11px;
+            pointer-events: all;
+        }
+
+        .alert-banner {
+            width: 100%;
+            min-height: 83px;
+            background-color: #252020;
+            color: #fff;
+            -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+            z-index: 2;
+            position: absolute;
+            border-bottom: 6px solid #d13d3d; 
+        }
+
+        .alert-banner .closebtn {
+            margin-left: 15px;
             color: white;
-            margin-bottom: 15px;
+            font-weight: bold;
+            float: right;
+            font-size: 30px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* When moving the mouse over the close button */
+        .alert-banner .closebtn:hover {
+            color: #d13d3d;
         }
     </style>
 </head>
@@ -26,11 +107,32 @@
 
     <!-- Navbar -->
 
-    <div class="alert">
-        <b>
-            <center>Announcement:
-        </b> We are currently experiencing a major outage and are working on getting everything up and going! View status updates <a href= https://flockbot.statuspage.io>here!</a></center>
+    <div class="alert-banner">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="wrapper">
+            <div class="alert-row">
+                <div class="tag">Alert</div>
+                <div class="message">
+                    <p>We are currently experiencing a major outage and are working on getting everything up and going!
+                        The
+                        dashboard and bot are both affected by this. Status updates can be seen <a
+                            href=https://flockbot.statuspage.io>here!</a></p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(function () { div.style.display = "none"; }, 600);
+            }
+        }
+    </script>
 
     <div class="navbar navbar-expand-md bg-dark navbar-dark">
         <div class="container">
@@ -44,21 +146,29 @@
                     <li class="nav-item"><a href="#Features" class="nav-link">Features</a></li>
                     <li class="nav-item"><a href="#Statistics" class="nav-link">Statistics</a></li>
                     <li class="nav-item"><a href="#FAQ" class="nav-link">FAQ</a></li>
-                    <li class="nav-item"><a href="http://dashboard.flockbot.xyz/commands" class="nav-link">Commands</a></li>
+                    <li class="nav-item"><a href="http://dashboard.flockbot.xyz/commands" class="nav-link">Commands</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Links</a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
-                            <li><a class="dropdown-item text-muted" href="https://discord.com/api/oauth2/authorize?client_id=799430695335493643&permissions=8&scope=bot%20applications.commands">Invite</a></li>
-                            <li><a class="dropdown-item text-muted" href="https://github.com/armoredeagle69/">Github</a></li>
-                            <li><a class="dropdown-item text-muted" href="https://discord.gg/c8auE6DFvg">Support Server</a></li>
+                            <li><a class="dropdown-item text-muted"
+                                    href="https://discord.com/api/oauth2/authorize?client_id=799430695335493643&permissions=8&scope=bot%20applications.commands">Invite</a>
+                            </li>
+                            <li><a class="dropdown-item text-muted" href="https://github.com/armoredeagle69/">Github</a>
+                            </li>
+                            <li><a class="dropdown-item text-muted" href="https://discord.gg/c8auE6DFvg">Support
+                                    Server</a></li>
                         </ul>
                     </li>
                 </ul>
-                <li class="navbar-nav nav-item"><a href="https://discord.com/oauth2/authorize?client_id=799430695335493643&redirect_uri=http%3A%2F%2Fflockbot.xyz%2Fdiscord%2Fcallback&response_type=code&scope=identify%20guilds" class="btn btn-outline-info">Login</a></li>
+                <li class="navbar-nav nav-item"><a
+                        href="https://discord.com/oauth2/authorize?client_id=799430695335493643&redirect_uri=http%3A%2F%2Fflockbot.xyz%2Fdiscord%2Fcallback&response_type=code&scope=identify%20guilds"
+                        class="btn btn-outline-info">Login</a></li>
             </div>
         </div>
     </div>
+
 
 
     <!-- Info -->
@@ -69,9 +179,12 @@
             <div class="d-flex">
                 <div>
                     <h1><span class="text-info">Flock</span>Bot</h1>
-                    <p>FlockBot is a multi-purpose, integrated bot that separates you from the rest of the bots and everything you
+                    <p>FlockBot is a multi-purpose, integrated bot that separates you from the rest of the bots and
+                        everything you
                         need is in it.</p>
-                    <a class="btn btn-info" href="https://discord.com/api/oauth2/authorize?client_id=799430695335493643&permissions=8&scope=bot%20applications.commands">Invite Bot</a>
+                    <a class="btn btn-info"
+                        href="https://discord.com/api/oauth2/authorize?client_id=799430695335493643&permissions=8&scope=bot%20applications.commands">Invite
+                        Bot</a>
                     <a class="m-2 btn btn-light" href="https://discord.gg/c8auE6DFvg">Support Server</a>
                 </div>
                 <img class="img-fluid w-50" src="./img/FlockBot.svg" alt="">
@@ -96,7 +209,8 @@
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">Easy to Use</h4>
-                            <p class="card-text">Type /help and get started! Most commands feature an easy to use menu with buttons!</p>
+                            <p class="card-text">Type /help and get started! Most commands feature an easy to use menu
+                                with buttons!</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +221,8 @@
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">24/7 Online</h4>
-                            <p class="card-text">FlockBot is online 24/7, with minimal downtime for updates. Try it out today!</p>
+                            <p class="card-text">FlockBot is online 24/7, with minimal downtime for updates. Try it out
+                                today!</p>
                         </div>
                     </div>
                 </div>
@@ -118,7 +233,9 @@
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">Open Source</h4>
-                            <p class="card-text">This website is open source for you to use on your own bot! Download it from <a href= https://github.com/armoredeagle69/armoredeagle69.github.io>github</a> to get started.</p>
+                            <p class="card-text">This website is open source for you to use on your own bot! Download it
+                                from <a href=https://github.com/armoredeagle69/armoredeagle69.github.io>github</a> to
+                                get started.</p>
                         </div>
                     </div>
                 </div>
@@ -176,7 +293,8 @@
                         </button>
                     </h5>
                     <div class="accordion-collapse collapse p-3" id="answer-1" data-bs-parent="#your-faq">
-                        Type / in chat to see all the commands available  for FlockBot. All commands are currently slash commands only.
+                        Type / in chat to see all the commands available for FlockBot. All commands are currently slash
+                        commands only.
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -209,7 +327,8 @@
                         </button>
                     </h5>
                     <div class="accordion-collapse collapse p-4" id="answer-4" data-bs-parent="#your-faq">
-                        Very good suggestionn you say? We want to hear it! Head over to the support server or direct message 
+                        Very good suggestionn you say? We want to hear it! Head over to the support server or direct
+                        message
                         Armored Eagle#6100 to give your suggestion, feedback or bug report!
                     </div>
                 </div>
@@ -244,7 +363,9 @@
                         <h3>Links</h3>
                         <ul>
                             <li><a href="https://discord.gg/c8auE6DFvg">Support server</a></li>
-                            <li><a href="https://discord.com/api/oauth2/authorize?client_id=799430695335493643&permissions=8&scope=bot%20applications.commands">Invite bot</a></li>
+                            <li><a
+                                    href="https://discord.com/api/oauth2/authorize?client_id=799430695335493643&permissions=8&scope=bot%20applications.commands">Invite
+                                    bot</a></li>
                             <li><a href="https://github.com/armoredeagle69/">Github</a></li>
                         </ul>
                     </div>
