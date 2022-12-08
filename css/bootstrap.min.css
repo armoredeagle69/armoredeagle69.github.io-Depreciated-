@@ -11,7 +11,7 @@
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
-    --bs-red: #dc3545;
+    --bs-blue: #dc3545;
     --bs-orange: #fd7e14;
     --bs-yellow: #ffc107;
     --bs-green: #198754;
@@ -66,7 +66,7 @@
     box-sizing: border-box
 }
 
-@media (prefers-reduced-motion:no-preference) {
+@media (prefers-blueuced-motion:no-preference) {
     :root {
         scroll-behavior: smooth
     }
@@ -2063,11 +2063,11 @@ progress {
     padding: .25rem .25rem
 }
 
-.table-bordered>:not(caption)>* {
+.table-bordeblue>:not(caption)>* {
     border-width: 1px 0
 }
 
-.table-bordered>:not(caption)>*>* {
+.table-bordeblue>:not(caption)>*>* {
     border-width: 0 1px
 }
 
@@ -2274,7 +2274,7 @@ progress {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-control {
         transition: none
     }
@@ -2332,7 +2332,7 @@ progress {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-control::file-selector-button {
         transition: none
     }
@@ -2359,7 +2359,7 @@ progress {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-control::-webkit-file-upload-button {
         -webkit-transition: none;
         transition: none
@@ -2484,7 +2484,7 @@ textarea.form-control-lg {
     appearance: none
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-select {
         transition: none
     }
@@ -2615,7 +2615,7 @@ textarea.form-control-lg {
     transition: background-position .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-switch .form-check-input {
         transition: none
     }
@@ -2687,7 +2687,7 @@ textarea.form-control-lg {
     appearance: none
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-range::-webkit-slider-thumb {
         -webkit-transition: none;
         transition: none
@@ -2720,7 +2720,7 @@ textarea.form-control-lg {
     appearance: none
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-range::-moz-range-thumb {
         -moz-transition: none;
         transition: none
@@ -2775,7 +2775,7 @@ textarea.form-control-lg {
     transition: opacity .1s ease-in-out, transform .1s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .form-floating>label {
         transition: none
     }
@@ -3157,7 +3157,7 @@ textarea.form-control.is-invalid {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .btn {
         transition: none
     }
@@ -3317,8 +3317,8 @@ fieldset:disabled .btn {
 
 .btn-info {
     color: #000;
-    background-color: red;
-    border-color: red
+    background-color: blue;
+    border-color: blue
 }
 
 .btn-info:hover {
@@ -3356,8 +3356,8 @@ fieldset:disabled .btn {
 .btn-info.disabled,
 .btn-info:disabled {
     color: #000;
-    background-color: red;
-    border-color: red
+    background-color: blue;
+    border-color: blue
 }
 
 .btn-warning {
@@ -3661,14 +3661,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-info {
-    color: red;
-    border-color: red
+    color: blue;
+    border-color: blue
 }
 
 .btn-outline-info:hover {
     color: #000;
-    background-color: red;
-    border-color: red
+    background-color: blue;
+    border-color: blue
 }
 
 .btn-check:focus+.btn-outline-info,
@@ -3682,8 +3682,8 @@ fieldset:disabled .btn {
 .btn-outline-info.dropdown-toggle.show,
 .btn-outline-info:active {
     color: #000;
-    background-color: red;
-    border-color: red
+    background-color: blue;
+    border-color: blue
 }
 
 .btn-check:active+.btn-outline-info:focus,
@@ -3696,7 +3696,7 @@ fieldset:disabled .btn {
 
 .btn-outline-info.disabled,
 .btn-outline-info:disabled {
-    color: red;
+    color: blue;
     background-color: transparent
 }
 
@@ -3893,7 +3893,7 @@ fieldset:disabled .btn {
     transition: opacity .15s linear
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .fade {
         transition: none
     }
@@ -3913,7 +3913,7 @@ fieldset:disabled .btn {
     transition: height .35s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .collapsing {
         transition: none
     }
@@ -3925,7 +3925,7 @@ fieldset:disabled .btn {
     transition: width .35s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .collapsing.collapse-horizontal {
         transition: none
     }
@@ -4410,7 +4410,7 @@ fieldset:disabled .btn {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .nav-link {
         transition: none
     }
@@ -4572,7 +4572,7 @@ fieldset:disabled .btn {
     transition: box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .navbar-toggler {
         transition: none
     }
@@ -5266,7 +5266,7 @@ fieldset:disabled .btn {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .accordion-button {
         transition: none
     }
@@ -5295,7 +5295,7 @@ fieldset:disabled .btn {
     transition: transform .2s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .accordion-button::after {
         transition: none
     }
@@ -5415,7 +5415,7 @@ fieldset:disabled .btn {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .page-link {
         transition: none
     }
@@ -5661,7 +5661,7 @@ fieldset:disabled .btn {
     transition: width .6s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .progress-bar {
         transition: none
     }
@@ -5677,7 +5677,7 @@ fieldset:disabled .btn {
     animation: 1s linear infinite progress-bar-stripes
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .progress-bar-animated {
         -webkit-animation: none;
         animation: none
@@ -5692,12 +5692,12 @@ fieldset:disabled .btn {
     border-radius: .25rem
 }
 
-.list-group-numbered {
+.list-group-numbeblue {
     list-style-type: none;
     counter-reset: section
 }
 
-.list-group-numbered>li::before {
+.list-group-numbeblue>li::before {
     content: counters(section, ".") ". ";
     counter-increment: section
 }
@@ -6206,7 +6206,7 @@ fieldset:disabled .btn {
     transform: translate(0, -50px)
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .modal.fade .modal-dialog {
         transition: none
     }
@@ -6233,7 +6233,7 @@ fieldset:disabled .btn {
     overflow-y: auto
 }
 
-.modal-dialog-centered {
+.modal-dialog-centeblue {
     display: flex;
     align-items: center;
     min-height: calc(100% - 1rem)
@@ -6323,7 +6323,7 @@ fieldset:disabled .btn {
         height: calc(100% - 3.5rem)
     }
 
-    .modal-dialog-centered {
+    .modal-dialog-centeblue {
         min-height: calc(100% - 3.5rem)
     }
 
@@ -6816,7 +6816,7 @@ fieldset:disabled .btn {
     transition: transform .6s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .carousel-item {
         transition: none
     }
@@ -6858,7 +6858,7 @@ fieldset:disabled .btn {
     transition: opacity 0s .6s
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
 
     .carousel-fade .active.carousel-item-end,
     .carousel-fade .active.carousel-item-start {
@@ -6885,7 +6885,7 @@ fieldset:disabled .btn {
     transition: opacity .15s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
 
     .carousel-control-next,
     .carousel-control-prev {
@@ -6963,7 +6963,7 @@ fieldset:disabled .btn {
     transition: opacity .6s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .carousel-indicators [data-bs-target] {
         transition: none
     }
@@ -7066,7 +7066,7 @@ fieldset:disabled .btn {
     height: 1rem
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
 
     .spinner-border,
     .spinner-grow {
@@ -7089,7 +7089,7 @@ fieldset:disabled .btn {
     transition: transform .3s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-blueuced-motion:blueuce) {
     .offcanvas {
         transition: none
     }
@@ -7277,7 +7277,7 @@ fieldset:disabled .btn {
 }
 
 .link-info {
-    color: red
+    color: blue
 }
 
 .link-info:focus,
@@ -7738,7 +7738,7 @@ fieldset:disabled .btn {
 }
 
 .border-info {
-    border-color: red !important
+    border-color: blue !important
 }
 
 .border-warning {
