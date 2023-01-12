@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+    background-color: rgb(33, 37, 41);
+    margin: 0;
+}
+
+.container2 {
+    position: relative;
+    top: 50px;
+    margin-inline: auto;
+    background-color: #151515;
+    border-radius: 10px;
+    width: 80%;
+    height: 275px;
+}
+
+.container3 {
+    position: relative;
+    margin-top: 75px;
+    margin-inline: auto;
+    background-color: #151515;
+    border-radius: 10px;
+    width: 80%;
+    height: 500px;
+}
+
+.container4 {
+    position: relative;
+    margin-top: 30px;
+    margin-inline: auto;
+    background-color: #151515;
+    border-radius: 10px;
+    width: 80%;
+    height: 250px;
+}
+
+.container5 {
+    position: relative;
+    margin-top: 30px;
+    margin-inline: auto;
+    background-color: #151515;
+    border-radius: 10px;
+    width: 80%;
+    height: 425px;
+}
+
+.version {
+    position: relative;
+    top: 7px;
+    text-align: left;
+    background-color: #181818;
+    width: 99%;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-inline: auto;
+}
+
+.version a {
+    margin-left: 50px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.fa-circle-check {
+    position: center;
+    top: 1px;
+    right: 1px;
+    margin-right: 2px;
+    color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 100px;
+    font-size: 10px;
+}
+
+.fa-circle-xmark {
+    position: center;
+    top: 1px;
+    right: 3px;
+    margin-right: 2px;
+    color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 100px;
+    font-size: 10px;
+}
+
+.fa-circle-exclamation {
+    position: center;
+    top: 1px;
+    right: 3px;
+    margin-right: 2px;
+    color: white;
+    box-shadow: 0 0 3px black;
+    border-radius: 100px;
+    font-size: 10px;
+}
+
+.updates {
+
+    text-align: left;
+    margin-inline: auto;
+    width: 90%;
+    height: 150px;
+}
+
+.updatesBox {
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 5px;
+}
+
+.updatesBox a {
+    opacity: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 4px 4px;
+    color: white;
+    background-color: #009E60;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.updatesBoxR {
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 5px;
+}
+
+.updatesBoxR a {
+    opacity: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 4px 4px;
+    color: white;
+    background-color: #D22B2B;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.updatesBoxY {
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 5px;
+}
+
+.updatesBoxY a {
+    opacity: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 5px 5px;
+    color: white;
+    background-color: #ffbf0098;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.feature {
+    position: relative;
+    left: 5px;
+    color: rgb(133, 133, 133);
+    font-family: 'Lato', sans-serif;
+}
